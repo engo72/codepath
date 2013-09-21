@@ -1,0 +1,10 @@
+package edu.codepath.todoapp;
+
+public class ToDoItemData
+{
+	public String	todo;
+
+	public ToDoItemData()
+	{
+	}
+}
