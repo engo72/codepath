@@ -1,9 +1,0 @@
-1379744704609	Change Layout
-1379748096080	Change Layout
-1379748393533	Extracts string 'null' into R.string.add_hint
-1379748708907	Extracts string 'null' into R.string.lbladd
-1379748737101	Extracts string 'null' into R.string.lbl_add
-1379751232322	Rename field 'lvList'
-1379752032029	Rename type 'ToDo'
-1379754941157	Delete elements
-1379760326900	Rename method 'handleEvents'
