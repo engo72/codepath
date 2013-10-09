@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+    
+    <EditText
+        android:id="@+id/etBill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnP10"
+        android:layout_alignLeft="@+id/seekBarTip"
+        android:layout_alignRight="@+id/seekBarTip"
+        android:ems="10"
+        android:hint="@string/bill"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/btnP10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_toLeftOf="@+id/btnP15"
+        android:onClick="handleEvents"
+        android:text="@string/p10" />
+
+    <Button
+        android:id="@+id/btnP15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:onClick="handleEvents"
+        android:text="@string/p15" />
+    <Button
+        android:id="@+id/btnP20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf="@+id/btnP15"
+        android:onClick="handleEvents"
+        android:text="@string/p20" />
+
+    <SeekBar
+        android:id="@+id/seekBarTip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnP10"
+        android:layout_marginBottom="14dp"
+        android:progress="0"
+        android:max="20" />
+    
+    <TextView
+        android:id="@+id/tvTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBarTip"
+        android:text="@string/tip"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <EditText
+        android:id="@+id/etTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBarTip"
+        android:layout_toRightOf="@+id/tvTip"
+        android:ems="10"
+        android:focusable="false"
+        android:inputType="none" />
+
+    
+
+    <TextView
+        android:id="@+id/tvTipPercentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTip"
+        android:layout_marginTop="36dp"
+        android:text="@string/tipPercentage"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <TextView
+        android:id="@+id/tvTipPerc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvTipPercentage"
+        android:layout_alignBottom="@+id/tvTipPercentage"
+        android:layout_alignRight="@+id/etTip"
+        android:layout_toRightOf="@+id/tvTipPercentage"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    
+</RelativeLayout>
